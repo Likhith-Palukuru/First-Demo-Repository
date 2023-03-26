@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{%extends 'Demo_App\base.html'%}
+{% load static %}
+{% block body_block%}
+<html lang="en">
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1 align="center">Login Form </h1><br>
+            <form method="POST" action="/testapp/register/">
+            {%csrf_token%}
+
+                <div class="form-group">
+                    <label>Login Id :</label>
+                    <input type="text" class="form-control" name="loginid">
+                </div>
+
+                <div class="form-group">
+                    <label for="fname">Password :</label>
+                    <input type="password" class="form-control" name="loginpassword">
+                </div>
+                <br> 
+                <button type="submit" class="btn btn-primary" >Login</button>
+                <button type="submit" class="btn btn-primary" >Register</button>
+                {% if mark == "error" %}
+                    <span class="errmsg">{{msg}}</span>
+                    {%else%}
+                    <span class="sucessmsg">{{msg}}</span>
+                {% endif %}
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+{%endblock%}

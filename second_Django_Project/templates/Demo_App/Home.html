@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{%extends 'Demo_App\base.html'%}
+{% load static %}
+{% block body_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+          <div class="col-6">
+            <div class='qoute fs-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae minima illo voluptates odit numquam labore vitae recusandae eaque? Temporibus corporis totam error autem cupiditate doloremque quod laudantium eos?<br><br>
+            <a type="button" class="btn btn-primary" href="/testapp/register/">Get Started   &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            
+
+          </div>
+          <div class="col-6">
+            <img src="{%static 'background\bg-5.png'%}" width=600px" height="500px">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+{%endblock%}
