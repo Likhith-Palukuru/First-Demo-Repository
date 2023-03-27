@@ -1,7 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from Demo_App.models import Student
-from Demo_App.comman_methods import *
 from json import dumps
 
 

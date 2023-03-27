@@ -39,8 +39,8 @@
                         <td>{{std.sname}}</td>
                         <td>{{std.saddr}}</td>
                         <td>
-                          <a type="button" class="btn btn-danger" href="/testapp/delete/{{std.id}}" onclick='return confirm("Are You Sure Want to delete the {{std.sname}} Student record ?");'><i class="fa-solid fa-trash-can"></i></a>&nbsp;
-                          <a type="button" class="btn btn-primary" href="/testapp/update/{{std.id}}">Update</a>
+                          <a type="button" class="btn btn-danger" href="/delete/{{std.id}}" onclick='return confirm("Are You Sure Want to delete the {{std.sname}} Student record ?");'><i class="fa-solid fa-trash-can"></i></a>&nbsp;
+                          <a type="button" class="btn btn-primary" href="/update/{{std.id}}">Update</a>
                         </td>
                       </tr>
                       
@@ -51,7 +51,7 @@
             <p>There is no data to display............!</p>
     {%endif%}
     <div class="text-center">
-      <a type="button" class="btn btn-success" href="/testapp/register/">Add Student</a>
+      <a type="button" class="btn btn-success" href="/register/">Add Student</a>
     </div>
     
 
