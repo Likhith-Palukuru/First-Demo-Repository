@@ -27,9 +27,9 @@ STATIC_DIR=os.path.join(BASE_DIR,"static")
 SECRET_KEY = "django-insecure-audo(lj20%_e2zpxq+5b3x)a0gzqpec06h&lsgovztqwa63og6"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,8 +123,6 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATICFILES_DIRS=[STATIC_DIR,]
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 # Default primary key field type
