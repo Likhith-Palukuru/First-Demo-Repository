@@ -28,7 +28,7 @@ print(TEMPLATE_DIR)
 SECRET_KEY = "django-insecure-h6&fsq+stvi5wm#c&5^b-d0=(%^0dw56#zbx^n(5%wh3@ru7!u"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
